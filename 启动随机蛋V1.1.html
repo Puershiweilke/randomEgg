@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="ico.ico">
+<title>随机蛋V1.01——20网络2郑展洋</title>
+</head>
+
+<body>
+	　
+	
+	<audio src="./sound/s0.wav"></audio>
+	<div class="bg">
+		<div class="sky">
+			<div class="sun"></div>
+
+			<div class="moon"></div>
+		</div>
+		<div class="bg0">
+		</div>
+		
+<!--
+		<div class="clouds c4"></div>
+		<div class="clouds c0"></div>
+		<div class="clouds c2"></div>
+		<div class="clouds c3"></div>
+		<div class="clouds c1"></div>
+		<div class="clouds c6"></div>
+		<div class="clouds c5"></div>
+-->
+		
+		<div class="centerEgg">
+			<div class="homeTop">
+				<div class="top"><img src="img/窝 后景.png" alt=""></div>
+			</div>
+			
+			
+			<div class="egg" >
+				<div class = "allEgg"><img src="img/蛋 完整.png" alt=""></div>
+				<div class = "animateEgg">
+					<div class="bottomAfter"><img src="img/蛋壳 下 背景.png" alt=""></div>
+					<div class = "end" >尚无</div>
+					
+					<div class="bottomBefore"><img src="img/蛋壳 下.png" alt=""></div>
+					<div class="top "><img src="img/蛋壳 上.png" alt=""></div>
+				</div>
+			</div>
+			<div class="eggClickArea"></div>
+			
+			<div class="homeBottom">
+				<div class="top"><img src="img/窝 前景.png" alt=""></div>
+			</div>
+			
+			
+		</div>
+		<div class="buttonFace Set">
+			<img src="./img/设置.png" alt="">
+		</div>
+		<div class="buttonFace History">
+			<img src="./img/历史.png" alt="">
+		</div>
+		
+		<div class="set face draged">
+			<header class = "dragButton">设置</header>
+			<!--<div class="box">
+				<span>音效</span>
+				<select>
+					<option url = "./sound/s0.wav" >音效1</option>
+					<option url = "./sound/s1.wav">音效2</option>
+					<option url = "./sound/s2.wav">音效3</option>
+					<option url = "./sound/s3.wav">音效4</option>
+				</select>
+			</div>-->
+			<div class="box class0">
+				<span>展示时字体颜色</span>
+				<select class = "selectFontColor">
+					<option  colorValue = "#00ff60">亮绿</option>
+					<option  colorValue = "#047d05">鸭耳绿</option>
+					<option  colorValue = "#4e3801">鸭包棕</option>
+					<option  colorValue = "#886803">淡棕</option>
+					<option  colorValue = "#fb6001">鸭嘴橙</option>
+				</select>
+				<br>
+				<span title = "防止频繁抽中同一个数字/文本">洗牌式随机</span>
+				<input type="checkbox" name = "outputBalance" checked>
+				<br>
+				</select>
+				<span>类型</span>
+				<select class = "selectClass">
+					<option>数字</option>
+					<option>文本</option>
+				</select>
+			</div>
+			<div class = "content">
+				<div class="num">
+					<div class="box">
+						<span>范围</span>
+						<input type="number" placeholder="最小数字" value = "0">—<input type="number"  placeholder="最大数字" value = "50">
+					</div>
+				</div>
+				<div class="txt">
+					<span>文本选项</span><input type="text" placeholder="选项1,选项2,选项3,......">
+				</div>
+			</div>
+			<div class="use"><input type="button" value = "确认"></div>
+			<footer>*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*</footer>
+		</div>
+
+
+		<div class="history face draged">
+			<header class = "dragButton"><img class = "luckyGoose" src = "img/幸运鹅.png">幸运鹅 <sub class = "clearButton" title = "清空" >x</sub></header>
+			<div class = "content">
+<!--				<div><span class="content">内容<span class="close">x</span></span></div>-->
+				
+			</div>
+				
+			<footer></footer>
+		</div>
+		
+		<div class="remind">
+			点击继续👆
+		</div>
+
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	</div>
+	
+	
+</body>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		body{
+			width:100vw;
+			height:100vh;	
+			overflow: hidden;
+		}
+		
+		
+		.sky{
+			position: relative;
+			position: absolute;
+			left: 0vh;
+			top:0vh;
+			width:100vw;
+			height:400vh;
+			background: linear-gradient(#7BCFE4,#1F1F1F);
+			
+		}
+		
+		.bg0{
+			position: absolute;
+			left: 0vh;
+			bottom:0vh;
+			width:100vw;
+			height:100vh;
+			background-image: url(img/田.png);
+			background-size: cover;
+			background-size: 100% 100%;
+		}
+		
+		
+		
+		.sun{
+			position: absolute;
+			left:120px;
+			top:90px;
+			 
+		}
+		
+		.set{
+			position: absolute;
+			left:10vh;
+			top:10vh;
+		}
+		
+		
+	</style>
+	
+	<link rel = "stylesheet" href = "body/clouds.css">
+	<link rel = "stylesheet" href = "body/sun.css">
+	<link rel = "stylesheet" href = "body/蛋.css">
+	<link rel = "stylesheet" href = "body/face.css">
+	<script src = "jquery-1.8.0.js"></script>
+	<script src = "body/sun.js"></script>
+	<script src = "body/云朵.js"></script>
+	<script src = "body/抖动.js"></script>
+	<script src = "body/随机.js"></script>
+	<script src = "body/蛋.js"></script>
+	<script src = "body/sound.js"></script>
+<!--	<script src = "body/rotateFollow.js"></script>-->
+	<script src = "body/函数路径动画.js"></script>
+	<script src = "body/mouseMobile.js"></script>
+	<script src = "body/drag.js"></script>
+	<script src = "body/face.js"></script>
+	<script src = "main.js"></script>
+	
+</html>
